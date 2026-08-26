@@ -4,7 +4,7 @@
 {% set openmp_ver = "4.5" %}
 
 {% set clang_major = version.split(".")[0]|int %}
-{% set clang_test_version = "19" %}
+{% set clang_test_version = "21" %}
 
 package:
   name: openmp
@@ -18,7 +18,7 @@ source:
     - patches/0002-don-t-build-z_Linux_asm.S-with-MSVC-ensure-__kmp_inv.patch
 
 build:
-  number: 1
+  number: 2
 
 requirements:
   build:
